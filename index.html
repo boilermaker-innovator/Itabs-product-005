@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,707 +16,787 @@
             --itabs-glow: rgba(0, 102, 204, 0.3);
         }
 
-```
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    body {
-        font-family: 'Source Sans 3', sans-serif;
-        background: var(--cream);
-        color: var(--text);
-        line-height: 1.8;
-    }
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            background: var(--cream);
+            color: var(--text);
+            line-height: 1.8;
+        }
 
-    .header {
-        background: linear-gradient(135deg, var(--melb-blue) 0%, #1a3a5c 100%);
-        padding: 3rem 2rem;
-        text-align: center;
-        color: white;
-    }
+        .header {
+            background: linear-gradient(135deg, var(--melb-blue) 0%, #1a3a5c 100%);
+            padding: 3rem 2rem;
+            text-align: center;
+            color: white;
+        }
 
-    .header h1 {
-        font-family: 'Playfair Display', serif;
-        font-size: clamp(2rem, 5vw, 3rem);
-        margin-bottom: 0.5rem;
-    }
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2rem, 5vw, 3rem);
+            margin-bottom: 0.5rem;
+        }
 
-    .header h1 span {
-        color: var(--melb-teal);
-    }
+        .header h1 span {
+            color: var(--melb-teal);
+        }
 
-    .header p {
-        font-size: 1.1rem;
-        opacity: 0.9;
-        max-width: 550px;
-        margin: 0 auto;
-    }
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 550px;
+            margin: 0 auto;
+        }
 
-    .header-note {
-        margin-top: 1.5rem;
-        padding: 1rem;
-        background: rgba(255,255,255,0.1);
-        border-radius: 8px;
-        display: inline-block;
-    }
+        .header-note {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            display: inline-block;
+        }
 
-    .header-note p {
-        margin: 0;
-        font-size: 0.95rem;
-    }
+        .header-note p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
 
-    .story {
-        max-width: 720px;
-        margin: 0 auto;
-        padding: 3rem 1.5rem;
-    }
+        .story {
+            max-width: 720px;
+            margin: 0 auto;
+            padding: 3rem 1.5rem;
+        }
 
-    .story-section {
-        margin-bottom: 3rem;
-    }
+        .story-section {
+            margin-bottom: 3rem;
+        }
 
-    .story h2 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.6rem;
-        color: var(--melb-blue);
-        margin-bottom: 1rem;
-    }
+        .story h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            color: var(--melb-blue);
+            margin-bottom: 1rem;
+        }
 
-    .story p {
-        margin-bottom: 1.25rem;
-        font-size: 1.05rem;
-    }
+        .story p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
 
-    .dialogue {
-        background: white;
-        border-left: 4px solid var(--coffee-brown);
-        padding: 1rem 1.25rem;
-        margin: 1.5rem 0;
-        border-radius: 0 8px 8px 0;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-    }
+        .dialogue {
+            background: white;
+            border-left: 4px solid var(--coffee-brown);
+            padding: 1rem 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
 
-    .dialogue.jon {
-        border-left-color: var(--itabs-blue);
-    }
+        .dialogue.jon {
+            border-left-color: var(--itabs-blue);
+        }
 
-    .dialogue.matt {
-        border-left-color: var(--melb-teal);
-    }
+        .dialogue.matt {
+            border-left-color: var(--melb-teal);
+        }
 
-    .dialogue .speaker {
-        font-weight: 600;
-        color: var(--coffee-brown);
-        margin-bottom: 0.25rem;
-        font-size: 0.9rem;
-    }
+        .dialogue .speaker {
+            font-weight: 600;
+            color: var(--coffee-brown);
+            margin-bottom: 0.25rem;
+            font-size: 0.9rem;
+        }
 
-    .dialogue.jon .speaker {
-        color: var(--itabs-blue);
-    }
+        .dialogue.jon .speaker {
+            color: var(--itabs-blue);
+        }
 
-    .dialogue.matt .speaker {
-        color: var(--melb-teal);
-    }
+        .dialogue.matt .speaker {
+            color: var(--melb-teal);
+        }
 
-    .dialogue p {
-        margin: 0;
-        font-style: italic;
-    }
+        .dialogue p {
+            margin: 0;
+            font-style: italic;
+        }
 
-    .location-tag {
-        display: inline-block;
-        background: var(--melb-blue);
-        color: white;
-        padding: 0.25rem 0.75rem;
-        border-radius: 20px;
-        font-size: 0.8rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
+        .location-tag {
+            display: inline-block;
+            background: var(--melb-blue);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
 
-    .highlight-box {
-        background: linear-gradient(135deg, #E8F7F7, #D0F0EF);
-        border: 2px solid var(--melb-teal);
-        border-radius: 12px;
-        padding: 1.5rem;
-        margin: 2rem 0;
-    }
+        .highlight-box {
+            background: linear-gradient(135deg, #E8F7F7, #D0F0EF);
+            border: 2px solid var(--melb-teal);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
 
-    .highlight-box h3 {
-        color: var(--melb-teal);
-        font-family: 'Playfair Display', serif;
-        margin-bottom: 0.75rem;
-    }
+        .highlight-box h3 {
+            color: var(--melb-teal);
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 0.75rem;
+        }
 
-    .highlight-box p {
-        margin-bottom: 0.75rem;
-    }
+        .highlight-box p {
+            margin-bottom: 0.75rem;
+        }
 
-    .highlight-box p:last-child {
-        margin-bottom: 0;
-    }
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
 
-    .demo-link-box {
-        background: linear-gradient(135deg, var(--itabs-blue), #0052a3);
-        color: white;
-        border-radius: 12px;
-        padding: 2rem;
-        margin: 2rem 0;
-        text-align: center;
-    }
+        .demo-link-box {
+            background: linear-gradient(135deg, var(--itabs-blue), #0052a3);
+            color: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin: 2rem 0;
+            text-align: center;
+        }
 
-    .demo-link-box h3 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.4rem;
-        margin-bottom: 0.75rem;
-    }
+        .demo-link-box h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
 
-    .demo-link-box p {
-        margin-bottom: 1rem;
-        opacity: 0.95;
-    }
+        .demo-link-box p {
+            margin-bottom: 1rem;
+            opacity: 0.95;
+        }
 
-    .demo-link-box a {
-        display: inline-block;
-        background: white;
-        color: var(--itabs-blue);
-        padding: 0.875rem 2rem;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 600;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
+        .demo-link-box a {
+            display: inline-block;
+            background: white;
+            color: var(--itabs-blue);
+            padding: 0.875rem 2rem;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
 
-    .demo-link-box a:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
-    }
+        .demo-link-box a:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
 
-    .timeline {
-        position: relative;
-        padding-left: 2rem;
-        border-left: 3px solid var(--melb-teal);
-        margin: 2rem 0;
-    }
+        .timeline {
+            position: relative;
+            padding-left: 2rem;
+            border-left: 3px solid var(--melb-teal);
+            margin: 2rem 0;
+        }
 
-    .timeline-item {
-        position: relative;
-        margin-bottom: 1.5rem;
-        padding-bottom: 1.5rem;
-        border-bottom: 1px dashed #ddd;
-    }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #ddd;
+        }
 
-    .timeline-item:last-child {
-        border-bottom: none;
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
+        .timeline-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
 
-    .timeline-item::before {
-        content: '';
-        position: absolute;
-        left: -2rem;
-        top: 0.5rem;
-        width: 12px;
-        height: 12px;
-        background: var(--melb-teal);
-        border-radius: 50%;
-        transform: translateX(-50%);
-    }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -2rem;
+            top: 0.5rem;
+            width: 12px;
+            height: 12px;
+            background: var(--melb-teal);
+            border-radius: 50%;
+            transform: translateX(-50%);
+        }
 
-    .timeline-time {
-        font-weight: 600;
-        color: var(--melb-teal);
-        font-size: 0.9rem;
-    }
+        .timeline-time {
+            font-weight: 600;
+            color: var(--melb-teal);
+            font-size: 0.9rem;
+        }
 
-    .itabs-btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        width: 22px;
-        height: 22px;
-        background: var(--itabs-blue);
-        color: white;
-        border: none;
-        border-radius: 50%;
-        font-size: 13px;
-        font-weight: 700;
-        font-style: italic;
-        font-family: Georgia, serif;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        box-shadow: 0 2px 8px var(--itabs-glow);
-        vertical-align: middle;
-        margin: 0 2px;
-    }
+        .itabs-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 22px;
+            height: 22px;
+            background: var(--itabs-blue);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            font-size: 13px;
+            font-weight: 700;
+            font-style: italic;
+            font-family: Georgia, serif;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 8px var(--itabs-glow);
+            vertical-align: middle;
+            margin: 0 2px;
+        }
 
-    .itabs-btn:hover {
-        transform: scale(1.15);
-        box-shadow: 0 4px 15px var(--itabs-glow);
-    }
+        .itabs-btn:hover {
+            transform: scale(1.15);
+            box-shadow: 0 4px 15px var(--itabs-glow);
+        }
 
-    .popup-overlay {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(10, 35, 66, 0.85);
-        z-index: 1000;
-        justify-content: center;
-        align-items: center;
-        padding: 1rem;
-        backdrop-filter: blur(4px);
-    }
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 35, 66, 0.85);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1rem;
+            backdrop-filter: blur(4px);
+        }
 
-    .popup-overlay.active {
-        display: flex;
-    }
+        .popup-overlay.active {
+            display: flex;
+        }
 
-    .popup {
-        background: white;
-        color: var(--text);
-        border-radius: 12px;
-        max-width: 420px;
-        width: 100%;
-        max-height: 80vh;
-        overflow-y: auto;
-        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-        animation: popupIn 0.3s ease;
-    }
+        .popup {
+            background: white;
+            color: var(--text);
+            border-radius: 12px;
+            max-width: 420px;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+            animation: popupIn 0.3s ease;
+        }
 
-    @keyframes popupIn {
-        from { opacity: 0; transform: scale(0.9) translateY(20px); }
-        to { opacity: 1; transform: scale(1) translateY(0); }
-    }
+        @keyframes popupIn {
+            from { opacity: 0; transform: scale(0.9) translateY(20px); }
+            to { opacity: 1; transform: scale(1) translateY(0); }
+        }
 
-    .popup-header {
-        background: var(--itabs-blue);
-        color: white;
-        padding: 1rem 1.25rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-radius: 12px 12px 0 0;
-    }
+        .popup-header {
+            background: var(--itabs-blue);
+            color: white;
+            padding: 1rem 1.25rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 12px 12px 0 0;
+        }
 
-    .popup-header h4 {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.1rem;
-    }
+        .popup-header h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.1rem;
+        }
 
-    .popup-close {
-        background: rgba(255,255,255,0.2);
-        border: none;
-        color: white;
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        font-size: 1.2rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+        .popup-close {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .popup-close:hover {
-        background: rgba(255,255,255,0.3);
-    }
+        .popup-close:hover {
+            background: rgba(255,255,255,0.3);
+        }
 
-    .popup-content {
-        padding: 1.25rem;
-    }
+        .popup-content {
+            padding: 1.25rem;
+        }
 
-    .popup-content p {
-        margin-bottom: 0.75rem;
-        line-height: 1.6;
-    }
+        .popup-content p {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
 
-    .popup-content strong {
-        color: var(--itabs-blue);
-    }
+        .popup-content strong {
+            color: var(--itabs-blue);
+        }
 
-    .popup-content ul, .popup-content ol {
-        margin: 0.75rem 0;
-        padding-left: 1.25rem;
-    }
+        .popup-content ul, .popup-content ol {
+            margin: 0.75rem 0;
+            padding-left: 1.25rem;
+        }
 
-    .popup-content li {
-        margin-bottom: 0.4rem;
-    }
+        .popup-content li {
+            margin-bottom: 0.4rem;
+        }
 
-    .popup-content a {
-        color: var(--itabs-blue);
-        text-decoration: none;
-        font-weight: 600;
-    }
+        .popup-content a {
+            color: var(--itabs-blue);
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-    .popup-content a:hover {
-        text-decoration: underline;
-    }
+        .popup-content a:hover {
+            text-decoration: underline;
+        }
 
-    .footer {
-        background: var(--melb-blue);
-        color: white;
-        padding: 1.5rem;
-        text-align: center;
-    }
+        .footer {
+            background: var(--melb-blue);
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+        }
 
-    .footer p {
-        opacity: 0.7;
-        font-size: 0.9rem;
-    }
+        .footer p {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
 
-    .footer a {
-        color: var(--melb-teal);
-    }
+        .footer a {
+            color: var(--melb-teal);
+        }
 
-    .emoji-big {
-        font-size: 3rem;
-        display: block;
-        text-align: center;
-        margin: 1rem 0;
-    }
-</style>
-```
-
+        .emoji-big {
+            font-size: 3rem;
+            display: block;
+            text-align: center;
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 <body>
 
-```
-<header class="header">
-    <h1>🍺 Melbourne Moment: <span>Matt Builds His Own Tool</span></h1>
-    <p>Jon went to get beers. Came back to a working prototype.</p>
-    <div class="header-note">
-        <p>👆 Click the blue <button class="itabs-btn" data-popup="what-is-itabs">i</button> buttons to see iTabs in action throughout this story</p>
-    </div>
-</header>
-
-<main class="story">
-
-    <section class="story-section">
-        <span class="location-tag">📍 Melbourne, Victoria</span>
-        <h2>The Catch-Up</h2>
-        
-        <p>Jon's in Melbourne on holiday <button class="itabs-btn" data-popup="melbourne">i</button>. Catches up with Matt — a mate who works in Victorian government schools. Beers. Pub. The usual.</p>
-
-        <p>Jon starts showing him this thing he's been building called iTabs <button class="itabs-btn" data-popup="itabs">i</button>. Little blue buttons that explain confusing stuff. Click, get the info, keep going.</p>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"That's actually... really simple. Could this work for the stuff we deal with at school?"</p>
-        </div>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"What kind of stuff?"</p>
-        </div>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"PAL <button class="itabs-btn" data-popup="pal">i</button>. The Policy and Advisory Library. It's where all our school policies live. Hundreds of them. And honestly? Most staff just give up trying to find anything."</p>
-        </div>
-
-        <p>Jon opened Claude on his laptop, showed Matt the basics. Then the glasses were empty.</p>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"I'll grab us another round. Have a go yourself — just describe what you need."</p>
-        </div>
-
-        <p>Jon headed to the bar.</p>
-    </section>
-
-    <section class="story-section">
-        <h2>The Build</h2>
-
-        <p>Jon came back with two beers.</p>
-
-        <p>Matt had already built half of it.</p>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"...mate, what did you do?"</p>
-        </div>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"I just described what teachers need. Categories, search box, links to the actual policies. It just... built it?"</p>
-        </div>
-
-        <p>Matt had typed prompts in plain English. Described the categories — HR, student safety, excursions, mobile phones <button class="itabs-btn" data-popup="mobile-phones">i</button>. Explained what teachers always complain about. Asked for a search box where staff could ask questions like normal humans.</p>
-
-        <p>Claude <button class="itabs-btn" data-popup="claude">i</button> built it. Piece by piece. Matt gave feedback. Claude refined. All while Jon was waiting at the bar.</p>
-
-        <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-time">While Jon ordered</div>
-                <p>Matt got the basic structure with category cards</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-time">While Jon waited for the pour</div>
-                <p>AI search box added — ask questions, get answers</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-time">While Jon paid</div>
-                <p>Real hyperlinks to actual PAL policies</p>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-time">While Jon walked back</div>
-                <p>Clickable category lists with individual policy links</p>
-            </div>
-        </div>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"I was gone for like five minutes."</p>
-        </div>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"Yeah. Is it meant to be this easy?"</p>
-        </div>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"Welcome to vibe coding <button class="itabs-btn" data-popup="vibe-coding">i</button>, mate."</p>
-        </div>
-    </section>
-
-    <div class="highlight-box">
-        <h3><button class="itabs-btn" data-popup="the-point">i</button> The Point</h3>
-        <p>Matt's not a developer. Never written code. First time using AI like this.</p>
+    <header class="header">
+        <h1>🍺 Melbourne Moment: <span>Matt Builds Something Useful</span></h1>
         <p>Jon went to get beers. Came back to a working prototype.</p>
-        <p><strong>That's the whole idea.</strong> The people closest to the problem should be able to build the solution. No hand-holding required.</p>
+        <div class="header-note">
+            <p>👆 Click the blue <button class="itabs-btn" data-popup="what-is-itabs">i</button> buttons to see iTabs in action throughout this story</p>
+        </div>
+    </header>
+
+    <main class="story">
+
+        <section class="story-section">
+            <span class="location-tag">📍 Melbourne, Victoria</span>
+            <h2>The Catch-Up</h2>
+            
+            <p>Jon's in Melbourne on holiday <button class="itabs-btn" data-popup="melbourne">i</button>. Catches up with Matt — a consultant working for the Victorian Department of Education <button class="itabs-btn" data-popup="matt">i</button>. His job? Improving processes with schools. Beers. Pub. The usual.</p>
+
+            <p>Jon starts showing him this thing he's been building called iTabs <button class="itabs-btn" data-popup="itabs">i</button>. Little blue buttons that explain confusing stuff. Click, get the info, keep going.</p>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"That's actually... really simple. Could this work for the stuff we deal with at school?"</p>
+            </div>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"What kind of stuff?"</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"PAL <button class="itabs-btn" data-popup="pal">i</button>. The Policy and Advisory Library. It's where all our school policies live. Hundreds of them. And honestly? Most staff just give up trying to find anything."</p>
+            </div>
+
+            <p>Jon opened Claude on his laptop, showed Matt the basics. Then the glasses were empty.</p>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"I'll grab us another round. Have a go yourself — just describe what you need."</p>
+            </div>
+
+            <p>Jon headed to the bar.</p>
+        </section>
+
+        <section class="story-section">
+            <h2>The Build</h2>
+
+            <p>Jon came back with two beers.</p>
+
+            <p>Matt had already built half of it.</p>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"...mate, what did you do?"</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"I just described what teachers need. Categories, search box, links to the actual policies. It just... built it?"</p>
+            </div>
+
+            <p>Matt had typed prompts in plain English. Described the categories — HR, student safety, excursions, mobile phones <button class="itabs-btn" data-popup="mobile-phones">i</button>. Explained what teachers always complain about. Asked for a search box where staff could ask questions like normal humans.</p>
+
+            <p>Claude <button class="itabs-btn" data-popup="claude">i</button> built it. Piece by piece. Matt gave feedback. Claude refined. All while Jon was waiting at the bar.</p>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-time">While Jon ordered</div>
+                    <p>Matt got the basic structure with category cards</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">While Jon waited for the pour</div>
+                    <p>AI search box added — ask questions, get answers</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">While Jon paid</div>
+                    <p>Real hyperlinks to actual PAL policies</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-time">While Jon walked back</div>
+                    <p>Clickable category lists with individual policy links</p>
+                </div>
+            </div>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"I was gone for like five minutes."</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"Yeah. Is it meant to be this easy?"</p>
+            </div>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"Welcome to vibe coding <button class="itabs-btn" data-popup="vibe-coding">i</button>, mate."</p>
+            </div>
+        </section>
+
+        <div class="highlight-box">
+            <h3><button class="itabs-btn" data-popup="the-point">i</button> The Point</h3>
+            <p>Matt's not a developer. Never written code. First time using AI like this.</p>
+            <p>Jon went to get beers. Came back to a working prototype.</p>
+            <p><strong>That's the whole idea.</strong> The people closest to the problem should be able to build the solution. No hand-holding required.</p>
+        </div>
+
+        <section class="story-section">
+            <h2>The Result</h2>
+
+            <p>They finished their beers polishing it up. Added a few more iTabs. Tweaked the layout.</p>
+
+            <p>Jon uploaded it to GitHub <button class="itabs-btn" data-popup="github">i</button>. Two minutes later — live URL.</p>
+
+            <div class="demo-link-box">
+                <h3>🎯 What Matt Built</h3>
+                <p>A working PAL demo with AI search, clickable categories, and iTabs throughout</p>
+                <a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">View Matt's Demo →</a>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"So I can just... show this to people? It's live?"</p>
+            </div>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"It's live. Send the link to whoever you want."</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"I'm showing this to IT on Monday."</p>
+            </div>
+        </section>
+
+        <section class="story-section">
+            <h2>The Millions Dollar Question</h2>
+
+            <p>Matt went quiet for a moment. Then:</p>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"You know how much the department pays for Salesforce? <button class="itabs-btn" data-popup="salesforce">i</button>"</p>
+            </div>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"How much?"</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"Millions. Literally millions. And we just built something useful while having beers."</p>
+            </div>
+
+            <p>They both sat with that for a second.</p>
+
+            <p>Millions in enterprise software contracts. Months of procurement. Teams of consultants. And here's Matt — first time using AI — building a working tool between rounds.</p>
+
+            <div class="dialogue jon">
+                <div class="speaker">JON</div>
+                <p>"Mate, you need to get Claude. Even if it's just for your own career. <button class="itabs-btn" data-popup="career">i</button>"</p>
+            </div>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"Yeah... I think I do."</p>
+            </div>
+        </section>
+
+        <div class="highlight-box">
+            <h3><button class="itabs-btn" data-popup="disruption">i</button> The Disruption</h3>
+            <p>Enterprise software costs millions. Takes months to implement. Requires specialists to configure.</p>
+            <p>Matt built a useful tool in the time it took Jon to get beers.</p>
+            <p><strong>The gap between "enterprise solution" and "actually useful" has never been wider.</strong></p>
+        </div>
+
+        <section class="story-section">
+            <h2>Monday Morning</h2>
+
+            <p>Picture it: Matt walks into his school's IT department <button class="itabs-btn" data-popup="it-dept">i</button>.</p>
+
+            <div class="dialogue matt">
+                <div class="speaker">MATT</div>
+                <p>"Hey, I made something over the weekend. It makes PAL actually usable."</p>
+            </div>
+
+            <p>They'll ask how he built it. He'll say he just described what he needed and AI did the rest.</p>
+
+            <p>No procurement process. No vendor meetings. No six-month project timeline. No budget approval.</p>
+
+            <p>Just a bloke who knows the problem, a coffee with a mate, and a few prompts.</p>
+
+            <span class="emoji-big">🚀</span>
+        </section>
+
+        <div class="highlight-box">
+            <h3><button class="itabs-btn" data-popup="why-matters">i</button> Why This Matters</h3>
+            <p>This isn't about one demo for one school.</p>
+            <p>It's proof that <strong>the people who understand problems can now build solutions</strong> — without needing to be developers, without needing budget approval, without waiting for IT.</p>
+            <p>Matt built a working tool over coffee. On a weekend. And it's live on the internet right now.</p>
+        </div>
+
+        <section class="story-section">
+            <h2>Try It Yourself</h2>
+
+            <p>Click the link below to see what Matt built. Click the blue <button class="itabs-btn" data-popup="itabs">i</button> buttons. Ask a question in the search box. Browse the categories.</p>
+
+            <p>Then imagine what you could build for your workplace.</p>
+
+            <div class="demo-link-box">
+                <h3>👀 See Matt's PAL Demo</h3>
+                <p>Built in one conversation. Live on the internet. Ready to show IT.</p>
+                <a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">Open the Demo →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Built with 🍺 in Melbourne | Powered by <a href="https://itabs.ai" target="_blank">iTabs</a></p>
+    </footer>
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <div class="popup-header">
+                <h4 id="popupTitle">Info</h4>
+                <button class="popup-close" onclick="closePopup()">×</button>
+            </div>
+            <div class="popup-content" id="popupContent"></div>
+        </div>
     </div>
 
-    <section class="story-section">
-        <h2>The Result</h2>
+    <script>
+        const itabsContent = {
+            'what-is-itabs': {
+                title: 'What is iTabs?',
+                content: `
+                    <p><strong>iTabs = Information Enhancement Technology</strong></p>
+                    <p>Those little blue "i" buttons you're clicking right now? That's iTabs.</p>
+                    <p>Click one → get the info you need → keep reading.</p>
+                    <p>The whole point is to put helpful information exactly where the confusion happens.</p>
+                `
+            },
+            'melbourne': {
+                title: 'Melbourne, Victoria',
+                content: `
+                    <p>Australia's second-largest city. Home to coffee culture, laneways, and apparently productive pub sessions.</p>
+                    <p>Jon's normally based in Perth but was visiting Melbourne when he caught up with Matt.</p>
+                `
+            },
+            'matt': {
+                title: 'Matt — Education Consultant',
+                content: `
+                    <p><strong>Matt works as a consultant for the Victorian Department of Education.</strong></p>
+                    <p>His job is improving processes with schools — helping them work better, more efficiently.</p>
+                    <p>He sees firsthand how teachers struggle with systems that are meant to help them. PAL is one of those systems.</p>
+                    <p>Not a developer. Never used AI to build anything before this beer.</p>
+                `
+            },
+            'itabs': {
+                title: 'iTabs',
+                content: `
+                    <p><strong>Information Enhancement Technology</strong></p>
+                    <p>A simple concept: put a little blue button next to anything confusing. Click it, get an explanation in plain English.</p>
+                    <p>Works on mobile. Doesn't require apps or logins. Just helpful information exactly when you need it.</p>
+                    <p><a href="https://itabs.ai" target="_blank">Learn more at itabs.ai →</a></p>
+                `
+            },
+            'pal': {
+                title: 'PAL — Policy and Advisory Library',
+                content: `
+                    <p><strong>The Victorian government's policy database for schools.</strong></p>
+                    <p>Contains hundreds of policies covering everything from excursions to anaphylaxis to mobile phone rules.</p>
+                    <p>Essential for school staff. Also notoriously hard to navigate — which is exactly why Matt wanted to build something better.</p>
+                `
+            },
+            'claude': {
+                title: 'Claude',
+                content: `
+                    <p><strong>An AI assistant made by Anthropic.</strong></p>
+                    <p>Matt used Claude to build the PAL demo. He described what he needed in plain English, and Claude wrote the code.</p>
+                    <p>No programming knowledge required. Just clear descriptions of the problem and what the solution should look like.</p>
+                    <p><strong>$20/month for Pro.</strong> Less than one hour of consultant rates.</p>
+                `
+            },
+            'mobile-phones': {
+                title: 'Mobile Phone Policy',
+                content: `
+                    <p>One of the most common policy questions in Victorian schools.</p>
+                    <p><strong>Short version:</strong> Students must have phones switched off and securely stored during school hours.</p>
+                    <p>It's a good example of something simple that's buried deep in PAL — exactly the kind of thing iTabs helps with.</p>
+                `
+            },
+            'vibe-coding': {
+                title: 'Vibe Coding',
+                content: `
+                    <p><strong>Building things with AI instead of traditional coding skills.</strong></p>
+                    <p>You describe what you want in plain language. AI helps you build it. You refine until it works.</p>
+                    <p>No syntax memorisation. No computer science degree. No dev team required.</p>
+                    <p><strong>The key:</strong> You still need to understand the problem. AI handles the "how". You handle the "why".</p>
+                `
+            },
+            'the-point': {
+                title: 'The Whole Point',
+                content: `
+                    <p>For decades, building software required specialised skills. If you had a problem, you needed to convince a developer to solve it.</p>
+                    <p>Now? <strong>The people closest to the problem can build the solution themselves.</strong></p>
+                    <p>Matt knows PAL's problems better than any developer. So Matt built the solution. That's how it should work.</p>
+                `
+            },
+            'github': {
+                title: 'GitHub Pages',
+                content: `
+                    <p><strong>Free website hosting.</strong></p>
+                    <p>Upload an HTML file, turn on Pages in settings, and you've got a live website in under 2 minutes.</p>
+                    <p>No servers. No domain costs. No technical setup.</p>
+                    <p>Matt's demo is live at:<br><a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">boilermaker-innovator.github.io/My-pal</a></p>
+                `
+            },
+            'salesforce': {
+                title: 'The Salesforce Question',
+                content: `
+                    <p><strong>Enterprise software is expensive.</strong></p>
+                    <p>Government departments spend millions on platforms like Salesforce. Licensing fees. Implementation costs. Consultants. Training. Ongoing support.</p>
+                    <p>And often? The end users still struggle to get what they need.</p>
+                    <p>Meanwhile, Matt built something useful in the time it took to pour two beers.</p>
+                `
+            },
+            'career': {
+                title: 'The Career Advice',
+                content: `
+                    <p>Jon's advice to Matt: <strong>"Get Claude. Even if it's just for your own career."</strong></p>
+                    <p>Why? Because the people who learn to work with AI now will have a massive advantage.</p>
+                    <p>Matt's a consultant. His job is solving problems. AI just 10x'd his ability to prototype solutions.</p>
+                    <p>That's not a threat to his job — it's a superpower for it.</p>
+                `
+            },
+            'disruption': {
+                title: 'The Real Disruption',
+                content: `
+                    <p>The disruption isn't AI replacing workers.</p>
+                    <p><strong>It's individuals being able to do what used to require entire teams.</strong></p>
+                    <p>One consultant with Claude can now prototype solutions that would have needed:</p>
+                    <ul>
+                        <li>Business analysts</li>
+                        <li>UX designers</li>
+                        <li>Developers</li>
+                        <li>Project managers</li>
+                        <li>Months of meetings</li>
+                    </ul>
+                    <p>Matt did it between rounds at the pub.</p>
+                `
+            },
+            'it-dept': {
+                title: 'Showing IT',
+                content: `
+                    <p>This is the moment that matters.</p>
+                    <p>Matt's not going to IT with a feature request or a complaint. He's going with a <strong>working solution</strong>.</p>
+                    <p>"Here's the problem. Here's something that fixes it. I built it over the weekend."</p>
+                    <p>That's a very different conversation.</p>
+                `
+            },
+            'why-matters': {
+                title: 'Why This Matters',
+                content: `
+                    <p><strong>The gatekeepers are gone.</strong></p>
+                    <p>You used to need:</p>
+                    <ul>
+                        <li>A developer (expensive)</li>
+                        <li>A project budget (slow approval)</li>
+                        <li>Months of development time</li>
+                    </ul>
+                    <p>Now you need:</p>
+                    <ul>
+                        <li>A clear understanding of the problem</li>
+                        <li>The ability to describe what you want</li>
+                        <li>A conversation with AI</li>
+                    </ul>
+                    <p>Matt built a working prototype in one sitting. That changes everything.</p>
+                `
+            }
+        };
 
-        <p>They finished their beers polishing it up. Added a few more iTabs. Tweaked the layout.</p>
-
-        <p>Jon uploaded it to GitHub <button class="itabs-btn" data-popup="github">i</button>. Two minutes later — live URL.</p>
-
-        <div class="demo-link-box">
-            <h3>🎯 What Matt Built</h3>
-            <p>A working PAL demo with AI search, clickable categories, and iTabs throughout</p>
-            <a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">View Matt's Demo →</a>
-        </div>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"So I can just... show this to people? It's live?"</p>
-        </div>
-
-        <div class="dialogue jon">
-            <div class="speaker">JON</div>
-            <p>"It's live. Send the link to whoever you want."</p>
-        </div>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"I'm showing this to IT on Monday."</p>
-        </div>
-    </section>
-
-    <section class="story-section">
-        <h2>Monday Morning</h2>
-
-        <p>Picture it: Matt walks into his school's IT department <button class="itabs-btn" data-popup="it-dept">i</button>.</p>
-
-        <div class="dialogue matt">
-            <div class="speaker">MATT</div>
-            <p>"Hey, I made something over the weekend. It makes PAL actually usable."</p>
-        </div>
-
-        <p>They'll ask how he built it. He'll say he just described what he needed and AI did the rest.</p>
-
-        <p>No procurement process. No vendor meetings. No six-month project timeline. No budget approval.</p>
-
-        <p>Just a bloke who knows the problem, a coffee with a mate, and a few prompts.</p>
-
-        <span class="emoji-big">🚀</span>
-    </section>
-
-    <div class="highlight-box">
-        <h3><button class="itabs-btn" data-popup="why-matters">i</button> Why This Matters</h3>
-        <p>This isn't about one demo for one school.</p>
-        <p>It's proof that <strong>the people who understand problems can now build solutions</strong> — without needing to be developers, without needing budget approval, without waiting for IT.</p>
-        <p>Matt built a working tool over coffee. On a weekend. And it's live on the internet right now.</p>
-    </div>
-
-    <section class="story-section">
-        <h2>Try It Yourself</h2>
-
-        <p>Click the link below to see what Matt built. Click the blue <button class="itabs-btn" data-popup="itabs">i</button> buttons. Ask a question in the search box. Browse the categories.</p>
-
-        <p>Then imagine what you could build for your workplace.</p>
-
-        <div class="demo-link-box">
-            <h3>👀 See Matt's PAL Demo</h3>
-            <p>Built in one conversation. Live on the internet. Ready to show IT.</p>
-            <a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">Open the Demo →</a>
-        </div>
-    </section>
-
-</main>
-
-<footer class="footer">
-    <p>Built with 🍺 in Melbourne | Powered by <a href="https://itabs.ai" target="_blank">iTabs</a></p>
-</footer>
-
-<div class="popup-overlay" id="popupOverlay">
-    <div class="popup">
-        <div class="popup-header">
-            <h4 id="popupTitle">Info</h4>
-            <button class="popup-close" onclick="closePopup()">×</button>
-        </div>
-        <div class="popup-content" id="popupContent"></div>
-    </div>
-</div>
-
-<script>
-    const itabsContent = {
-        'what-is-itabs': {
-            title: 'What is iTabs?',
-            content: `
-                <p><strong>iTabs = Information Enhancement Technology</strong></p>
-                <p>Those little blue "i" buttons you're clicking right now? That's iTabs.</p>
-                <p>Click one → get the info you need → keep reading.</p>
-                <p>The whole point is to put helpful information exactly where the confusion happens.</p>
-            `
-        },
-        'melbourne': {
-            title: 'Melbourne, Victoria',
-            content: `
-                <p>Australia's second-largest city. Home to coffee culture, laneways, and apparently productive holiday catch-ups.</p>
-                <p>Jon's normally based in Perth but was visiting Melbourne when he caught up with Matt.</p>
-            `
-        },
-        'itabs': {
-            title: 'iTabs',
-            content: `
-                <p><strong>Information Enhancement Technology</strong></p>
-                <p>A simple concept: put a little blue button next to anything confusing. Click it, get an explanation in plain English.</p>
-                <p>Works on mobile. Doesn't require apps or logins. Just helpful information exactly when you need it.</p>
-                <p><a href="https://itabs.ai" target="_blank">Learn more at itabs.ai →</a></p>
-            `
-        },
-        'pal': {
-            title: 'PAL — Policy and Advisory Library',
-            content: `
-                <p><strong>The Victorian government's policy database for schools.</strong></p>
-                <p>Contains hundreds of policies covering everything from excursions to anaphylaxis to mobile phone rules.</p>
-                <p>Essential for school staff. Also notoriously hard to navigate — which is exactly why Matt wanted to build something better.</p>
-            `
-        },
-        'claude': {
-            title: 'Claude',
-            content: `
-                <p><strong>An AI assistant made by Anthropic.</strong></p>
-                <p>Matt used Claude to build the PAL demo. He described what he needed in plain English, and Claude wrote the code.</p>
-                <p>No programming knowledge required. Just clear descriptions of the problem and what the solution should look like.</p>
-            `
-        },
-        'mobile-phones': {
-            title: 'Mobile Phone Policy',
-            content: `
-                <p>One of the most common policy questions in Victorian schools.</p>
-                <p><strong>Short version:</strong> Students must have phones switched off and securely stored during school hours.</p>
-                <p>It's a good example of something simple that's buried deep in PAL — exactly the kind of thing iTabs helps with.</p>
-            `
-        },
-        'vibe-coding': {
-            title: 'Vibe Coding',
-            content: `
-                <p><strong>Building things with AI instead of traditional coding skills.</strong></p>
-                <p>You describe what you want in plain language. AI helps you build it. You refine until it works.</p>
-                <p>No syntax memorisation. No computer science degree. No dev team required.</p>
-                <p><strong>The key:</strong> You still need to understand the problem. AI handles the "how". You handle the "why".</p>
-            `
-        },
-        'the-point': {
-            title: 'The Whole Point',
-            content: `
-                <p>For decades, building software required specialised skills. If you had a problem, you needed to convince a developer to solve it.</p>
-                <p>Now? <strong>The people closest to the problem can build the solution themselves.</strong></p>
-                <p>Matt knows PAL's problems better than any developer. So Matt built the solution. That's how it should work.</p>
-            `
-        },
-        'github': {
-            title: 'GitHub Pages',
-            content: `
-                <p><strong>Free website hosting.</strong></p>
-                <p>Upload an HTML file, turn on Pages in settings, and you've got a live website in under 2 minutes.</p>
-                <p>No servers. No domain costs. No technical setup.</p>
-                <p>Matt's demo is live at:<br><a href="https://boilermaker-innovator.github.io/My-pal/" target="_blank">boilermaker-innovator.github.io/My-pal</a></p>
-            `
-        },
-        'it-dept': {
-            title: 'Showing IT',
-            content: `
-                <p>This is the moment that matters.</p>
-                <p>Matt's not going to IT with a feature request or a complaint. He's going with a <strong>working solution</strong>.</p>
-                <p>"Here's the problem. Here's something that fixes it. I built it over the weekend."</p>
-                <p>That's a very different conversation.</p>
-            `
-        },
-        'why-matters': {
-            title: 'Why This Matters',
-            content: `
-                <p><strong>The gatekeepers are gone.</strong></p>
-                <p>You used to need:</p>
-                <ul>
-                    <li>A developer (expensive)</li>
-                    <li>A project budget (slow approval)</li>
-                    <li>Months of development time</li>
-                </ul>
-                <p>Now you need:</p>
-                <ul>
-                    <li>A clear understanding of the problem</li>
-                    <li>The ability to describe what you want</li>
-                    <li>A conversation with AI</li>
-                </ul>
-                <p>Matt built a working prototype in one sitting. That changes everything.</p>
-            `
+        function openPopup(id) {
+            const content = itabsContent[id];
+            if (!content) return;
+            document.getElementById('popupTitle').textContent = content.title;
+            document.getElementById('popupContent').innerHTML = content.content;
+            document.getElementById('popupOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
         }
-    };
 
-    function openPopup(id) {
-        const content = itabsContent[id];
-        if (!content) return;
-        document.getElementById('popupTitle').textContent = content.title;
-        document.getElementById('popupContent').innerHTML = content.content;
-        document.getElementById('popupOverlay').classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
+        function closePopup() {
+            document.getElementById('popupOverlay').classList.remove('active');
+            document.body.style.overflow = '';
+        }
 
-    function closePopup() {
-        document.getElementById('popupOverlay').classList.remove('active');
-        document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.itabs-btn[data-popup]').forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            e.stopPropagation();
-            openPopup(btn.dataset.popup);
+        document.querySelectorAll('.itabs-btn[data-popup]').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                openPopup(btn.dataset.popup);
+            });
         });
-    });
 
-    document.getElementById('popupOverlay').addEventListener('click', (e) => {
-        if (e.target === e.currentTarget) closePopup();
-    });
+        document.getElementById('popupOverlay').addEventListener('click', (e) => {
+            if (e.target === e.currentTarget) closePopup();
+        });
 
-    document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closePopup();
-    });
-</script>
-```
-
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closePopup();
+        });
+    </script>
 </body>
 </html>
